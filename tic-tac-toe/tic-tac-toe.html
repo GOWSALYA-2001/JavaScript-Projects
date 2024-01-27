@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var body = document.body;
+        body.style.backgroundColor = "#A7A2A9";
+        body.style.margin = "0";
+        body.style.padding = "0";
+        body.style.height = "100vh";
+        var count="X"
+        
+        var area = document.createElement('div');
+        area.style.height="150px";
+        area.style.width = "450px";
+        area.style.display = "flex";
+        area.style.flexDirection = "row";
+        area.style.flexWrap = "wrap";
+        area.style.marginLeft = "400px"
+        area.style.marginTop="100px";
+        
+        for(let index= 1;index<=9;index++){
+            var box = document.createElement('div');
+            box.style.height="90%";
+            box.style.width="33%";
+            box.style.boxSizing = "border-box";
+            box.setAttribute("id",index);
+            box.style.border ="1px solid #CBCE91FF";
+            box.style.backgroundColor = "#76528BFF";
+            box.style.color="#C7D3D4FF";
+            box.style.fontSize="29px";
+            box.style.textAlign="center";
+            box.style.lineHeight = "130px"
+            box.addEventListener('click',function(){
+                if(this.innerText.length==0){
+                    if(count=="X"){
+                    this.innerText = count;
+                    count = "O";
+                    }
+                   else{
+                    this.innerText = count;
+                    count = "X";
+                    }
+                }
+            });
+            
+            area.appendChild(box)
+        }
+        document.body.appendChild(area);
+    </script>
+</body>
+</html>

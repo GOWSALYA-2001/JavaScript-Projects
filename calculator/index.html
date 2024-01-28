@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <label for="name">Calculator</label>
+        <input type="text" id="name"><br>
+        <div class="buttons">
+            <button onclick="clearInput()" id="btn">AC</button>
+       
+        
+        <div class="container">
+            <button onclick="update('7')" id="btn">7</button>
+            <button onclick="update('8')"id="btn">8</button>
+            <button onclick="update('9')"id="btn">9</button>
+            <button onclick="update('*')"id="btn">*</button>
+        </div>
+        <div class="container">
+            <button onclick="update('4')"id="btn">4</button>
+            <button onclick="update('5')"id="btn">5</button>
+            <button onclick="update('6')"id="btn">6</button>
+            <button onclick="update('-')"id="btn">-</button>
+        </div>
+        <div class="container">
+            <button onclick="update('1')"id="btn">1</button>
+            <button onclick="update('2')"id="btn">2</button>
+            <button onclick="update('3')"id="btn">3</button>
+            <button onclick="update('+')"id="btn">+</button>
+        </div>
+        <div class="container">
+            <button onclick="update('0')"id="btn">0</button>
+            <button onclick="update('%')"id="btn">%</button>
+            <button onclick="update('.')"id="btn">.</button>
+            <button onclick="calculate()"id="btn">=</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>

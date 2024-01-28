@@ -1,0 +1,26 @@
+.main{
+    border:2px solid ;
+    border-color: none;
+    width:30%;
+    height: 460px;
+    padding-left: 15px;
+    margin-left: 440px;
+    margin-top: 3rem;
+}
+input{
+    width:80%;
+    padding: 20px;
+    margin:13px 0px;
+}
+#btn{
+    width:15%;
+    padding: 15px;
+    font-size: 18px;
+    margin: 7px;
+}
+label{
+    color:lightseagreen;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
